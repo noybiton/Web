@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology - Lab 1</title>
+    <style>
+       .h1{
+        color: blueviolet;
+        font-family: fantasy;
+        font-size:50px;
+        text-align: center;
+        text-shadow: 1px 1px 2px black, 0 0 25px palevioletred, 0 0 darkmagenta ;
+        margin-top: 40px;
+      }
+       .styCal{
+        border: 2px solid rgb(224, 186, 186);
+        border-radius: 7px;
+        background-color: #FFF0F5;
+        width: 300px;
+        padding: 10px 15px;
+        margin: 40px auto;
+        margin-top: -20px; 
+       }
+
+       .monitor{
+        background-color: #FFF0F5;
+        border-radius:10px ;
+        padding: 10px 20px;
+        color: black;
+        text-align: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 2px solid #d993aa;
+        box-shadow: 5px 5px lightpink;
+       }
+
+       .button{
+        border:1px solid #a77384;
+        border-radius: 15px;
+        text-align: center;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(219, 179, 219);
+        float: left;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 12px;
+        cursor: pointer;
+        box-shadow: 3px 4px rgb(210, 184, 188);
+       }
+
+       .button:hover{
+        background-color: #ecb5c7;
+        color: #804156;
+       }
+
+       .signBut{
+        border: 1px solid #d993aa;
+        border-radius: 15px;
+        text-align: center;
+        color:rgb(173, 77, 93);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: white;
+        float: left;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 12px;
+        cursor: pointer;
+        box-shadow: 3px 4px rgb(210, 184, 188);
+       
+       }
+
+       .signBut:hover{
+        background-color: #6f0d2e;
+        color: white;
+       }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="h1"> Calculator</div>
+    <div class="styCal">
+        <div>
+            <div class="monitor"> 99.9</div>
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="signBut">÷</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="signBut">x</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="signBut" style="font-size: 18px;">-</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div>
+            <div class="button">0</div>
+            <div class="signBut" style="font-size: 18px;">.</div>
+            <div class="signBut">=</div>
+            <div class="signBut">+</div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+    
+</body>
+</html> 
